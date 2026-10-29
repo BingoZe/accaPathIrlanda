@@ -25,18 +25,13 @@ window.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // FEEDBACK:
-  // 1. Crie um formulário no Microsoft Forms ou Google Forms.
-  // 2. Cole o link abaixo.
-  // 3. Remova as duas linhas que adicionam as classes "disabled" e "aria-disabled".
-  const feedbackUrl = '';
+
+  const feedbackUrl = 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__qHa0fNUNDZIMTMzWk9ZWUtOQ1NKRlFJVEM4WFBGNC4u';
   const feedbackLink = document.querySelector('#feedbackLink');
 
   if (feedbackUrl && feedbackLink) {
     feedbackLink.href = feedbackUrl;
     feedbackLink.target = '_blank';
     feedbackLink.rel = 'noopener noreferrer';
-    feedbackLink.classList.remove('disabled');
-    feedbackLink.removeAttribute('aria-disabled');
   }
 });
